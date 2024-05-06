@@ -96,62 +96,103 @@ function toggleDropdown() {
 
 
 
-//Changing background color of the navbar on scroll
+// //Changing background color of the navbar on scroll
+// document.addEventListener("DOMContentLoaded", function () {
+//     if (window.location.pathname.includes("index.html")) {
+//         window.onscroll = function () {
+//             changeNavbarBackground();
+//         };
+//     }
+//     else {
+//         window.onscroll = function () {
+//             revertNavbarBackground();
+//         };
+//     }
+// });
+
+// function changeNavbarBackground() {
+//     const navbar = document.getElementById("navbar");
+//     const menuitems = document.getElementsByClassName("menuList");
+//     const logoSpan = document.querySelector('.logo span');
+//     const userProfileIcon = document.querySelector('#user');
+
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//         navbar.style.backgroundColor = "#021D1B"; // Change the background color as needed
+//         // navbar.classList.add("scrolled"); // Add a class to the nav tag
+//         navbar.classList.toggle("scrolled");
+//         // Change colors when scrolled
+//         logoSpan.style.color = '#099714'; // Change to the desired color
+//         userProfileIcon.style.color = '#099714'; // Change to the desired color
+//         // signBtn.style.backgroundColor = '#099714'; // Change to the desired color
+//     } else {
+//         navbar.style.backgroundColor = "transparent";
+//         // navbar.classList.remove("scrolled"); // Add a class to the nav tag
+//         logoSpan.style.color = ''; // Revert to the original color
+//         userProfileIcon.style.color = ''; // Revert to the original color
+//         // signBtn.style.backgroundColor = ''; // Revert to the original color
+//     }
+// }
+
+// function revertNavbarBackground() {
+//     const navbar = document.getElementById("navbar");
+//     const menuitems = document.querySelector('.menuList i');
+//     const logoSpan = document.querySelector('.logo span');
+//     const userProfileIcon = document.querySelector('#user');
+
+
+//     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+//         navbar.style.backgroundColor = "#021D1B"; // Change the background color as needed
+//         navbar.classList.add("navbar2"); // Add a class to the nav tag
+//         // Change colors when scrolled
+//         if (menuitems !== undefined && menuitems !== null) {
+//             menuitems.style.color = '#021D1B';
+//         }
+//         logoSpan.style.color = '#006714'; // Change to the desired color
+//         userProfileIcon.style.fill = '#CDFCF5';
+
+//     }
+// }
+
+
 document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.getElementById("navbar");
+    const logoSpan = document.querySelector('.logo span');
+    const userProfileIcon = document.querySelector('#user');
+
     if (window.location.pathname.includes("index.html")) {
-        window.onscroll = function () {
-            changeNavbarBackground();
-        };
-    }
-    else {
-        window.onscroll = function () {
-            revertNavbarBackground();
-        };
+        window.addEventListener('scroll', function () {
+            changeNavbarBackground(navbar, logoSpan, userProfileIcon);
+        });
+    } else {
+        window.addEventListener('scroll', function () {
+            revertNavbarBackground(navbar, logoSpan, userProfileIcon);
+        });
     }
 });
 
-function changeNavbarBackground() {
-    const navbar = document.getElementById("navbar");
-    const menuitems = document.getElementsByClassName("menuList");
-    const logoSpan = document.querySelector('.logo span');
-    const userProfileIcon = document.querySelector('#user');
-
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        navbar.style.backgroundColor = "#021D1B"; // Change the background color as needed
-        // navbar.classList.add("scrolled"); // Add a class to the nav tag
-        navbar.classList.toggle("scrolled");
-        // Change colors when scrolled
-        logoSpan.style.color = '#099714'; // Change to the desired color
-        userProfileIcon.style.color = '#099714'; // Change to the desired color
-        // signBtn.style.backgroundColor = '#099714'; // Change to the desired color
+function changeNavbarBackground(navbar, logoSpan, userProfileIcon) {
+    if (window.pageYOffset > 20) {
+        navbar.style.backgroundColor = "#021D1B";
+        navbar.classList.add("scrolled");
+        logoSpan.style.color = '#099714';
+        userProfileIcon.style.color = '#099714';
     } else {
         navbar.style.backgroundColor = "transparent";
-        // navbar.classList.remove("scrolled"); // Add a class to the nav tag
-        logoSpan.style.color = ''; // Revert to the original color
-        userProfileIcon.style.color = ''; // Revert to the original color
-        // signBtn.style.backgroundColor = ''; // Revert to the original color
+        navbar.classList.remove("scrolled");
+        logoSpan.style.color = '';
+        userProfileIcon.style.color = '';
     }
 }
 
-function revertNavbarBackground() {
-    const navbar = document.getElementById("navbar");
-    const menuitems = document.querySelector('.menuList i');
-    const logoSpan = document.querySelector('.logo span');
-    const userProfileIcon = document.querySelector('#user');
-
-
-    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-        navbar.style.backgroundColor = "#021D1B"; // Change the background color as needed
-        navbar.classList.add("navbar2"); // Add a class to the nav tag
-        // Change colors when scrolled
-        if (menuitems !== undefined && menuitems !== null) {
-            menuitems.style.color = '#021D1B';
-        }
-        logoSpan.style.color = '#006714'; // Change to the desired color
+function revertNavbarBackground(navbar, logoSpan, userProfileIcon) {
+    if (window.pageYOffset > 0) {
+        navbar.style.backgroundColor = "#021D1B";
+        navbar.classList.add("navbar2");
+        logoSpan.style.color = '#006714';
         userProfileIcon.style.fill = '#CDFCF5';
-
     }
 }
+
 
 
 
