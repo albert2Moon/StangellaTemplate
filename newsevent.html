@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Watbin Albert">
+
+    <title>School Portal</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- <script>
+        $function(() => {
+            //this will get the full URL at the address bar
+            var url = window.location.href;
+
+            //passes on every "a" tag 
+            $("#active_Item a").each(function () {
+                //catches if its the same on the address bar
+                if (url == (this.href)) {
+                    $(this).closest("li").addClass("active");
+                }
+            });
+        });
+    </script> -->
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar2" id="navbar">
+
+        <div class="menu" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <div class="logo">
+            <h1><span>S</span>.Portal</h1>
+        </div>
+
+        <ul class="menuList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="newsevent.html">News & Events</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="signin">
+            <div class="dropdown" id="userProfile">
+                <button onclick="toggleDropdown()">
+                    <svg id="user" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <g id="SVGRepo_iconCarrier">
+                            <circle cx="12" cy="6" r="4" fill="#CDFCF5" />
+                            <path
+                                d="M20 17.5C20 19.9853 20 22 12 22C4 22 4 19.9853 4 17.5C4 15.0147 7.58172 13 12 13C16.4183 13 20 15.0147 20 17.5Z"
+                                fill="#CDFCF5" />
+                        </g>
+
+                    </svg>
+                </button>
+                <div class="dropdown-content" id="dropdownContent">
+                    <a href="signin.html">Portal</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div class="newsEvents_header">
+        <h1>Our News & Events</h1>
+        <p>Welcome to our school's News and Events Hub.</p>
+    </div>
+
+
+    <!-- News Section -->
+    <section class="firstNewsSec content">
+
+        <h1>School Events</h1>
+            <div class="seLineTitle"></div>
+
+        <div class="schoolEvents_container">
+            
+            <div class="schoolEvents_cards">
+                <div class="se seCard1">
+
+                    <div class="seImg">
+                        <img src="images/news.jpeg" alt="">
+                    </div>
+                    <div class="seDes">
+                        <h3>Our school Graduation coming soon</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur elit. Inventore, sint? Porro ab dolorem</p>
+                        <div class="seFooter">
+                            <h4 class="seOwner">Admin</h4>
+                            <p class="seEnd">Mar 20 - 5 min read <i class="fa-solid fa-star"></i></p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="se seCard2">
+                    <div class="seCard_sub">
+                        <div class="seImg_sub">
+                            <img src="images/3.jpeg" alt="">
+                        </div>
+                        <div class="seDes_sub">
+                            <h3>School Visitation Day Coming soon</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur elit.</p>
+                            <div class="seFooter_sub">
+                                <h4 class="seOwner">Admin</h4>
+                                <p class="seEnd">Mar 20 - 5 min read <i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="seCard_sub">
+                        <div class="seImg_sub">
+                            <img src="images/n7.jpeg" alt="">
+                        </div>
+                        <div class="seDes_sub">
+                            <h3>Obs and Ogs Get together. Dont miss out</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur elit.</p>
+                            <div class="seFooter_sub">
+                                <h4 class="seOwner">Admin</h4>
+                                <p class="seEnd">Mar 20 - 5 min read <i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="se seCard3">
+
+                    <div class="SubseCard">
+                        <div class="SubseImg">
+                            <img src="images/n5.jpeg" alt="">
+                        </div>
+                        <div class="SubseDes">
+                            <h3>School Events Title</h3>
+                            <div class="SubseFooter">
+                                <h4 class="seOwner">Admin</h4>
+                                <p class="seEnd">Mar 20 - 5 min read <i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="SubseCard">
+                        <div class="SubseImg">
+                            <img src="images/3.jpeg" alt="">
+                        </div>
+                        <div class="SubseDes">
+                            <h3>School Events Title</h3>
+                            <div class="SubseFooter">
+                                <h4 class="seOwner">Admin</h4>
+                                <p class="seEnd">Mar 20 - 5 min read <i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="SubseCard">
+                        <div class="SubseImg">
+                            <img src="images/3.jpeg" alt="">
+                        </div>
+                        <div class="SubseDes">
+                            <h3>School Events Title</h3>
+                            <div class="SubseFooter">
+                                <h4 class="seOwner">Admin</h4>
+                                <p class="seEnd">Mar 20 - 5 min read <i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+   
+    <section>
+
+        <div class="schoolNews">
+
+            <h1>School News</h1>
+            <div class="snLineTitle"></div>
+
+            <div class="schoolNews_Container">
+
+                <div class="snCardsWrapper_container">
+
+                    <h2>Latest News Articles</h2>
+                    <div class="snLine"></div>
+
+                    <div class="snCards_wrapper cards-container">
+
+                        <div class="sn snCard card" >
+                            <div class="snImg">
+                                <img src="images/n1.jpeg" alt="">
+                            </div>
+                            <div class="snDes">
+                                <h3>School News Title</h3>
+                                <span class="nCard_date"><i class="fa-solid fa-calendar-days"></i> 19 MAY 24 <i
+                                        class="fa-solid fa-newspaper"></i> New Vision</span>
+                                <p id="snDesContent">Lorem ipsum dolor sit amet consectetur elit. Inventore, sint? Porro ab dolorem
+                                </p>
+                                <div class="snFooter">
+                                    <h4 class="snOwner">Admin</h4>
+                                    <p class="snEnd">Mar 25 - 5 min read <i class="fa-solid fa-star"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sn snCard card">
+                            <div class="snImg">
+                                <img src="images/n2.jpeg" alt="">
+                            </div>
+                            <div class="snDes">
+                                <h3>School News Title</h3>
+                                <span class="nCard_date"><i class="fa-solid fa-calendar-days"></i> 19 MAY 24 <i
+                                        class="fa-solid fa-newspaper"></i> New Vision</span>
+                                <p>Lorem ipsum dolor sit amet consectetur elit. Inventore, sint? Porro ab dolorem
+                                </p>
+                                <div class="snFooter">
+                                    <h4 class="snOwner">Admin</h4>
+                                    <p class="snEnd">Mar 20 - 5 min read <i class="fa-solid fa-star"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sn snCard">
+                            <div class="snImg">
+                                <img src="images/n3.jpeg" alt="">
+                            </div>
+                            <div class="snDes">
+                                <h3>School News Title</h3>
+                                <span class="nCard_date"><i class="fa-solid fa-calendar-days"></i> 19 MAY 24 <i
+                                        class="fa-solid fa-newspaper"></i> New Vision</span>
+                                <p>Lorem ipsum dolor sit amet consectetur elit. Inventore, sint? Porro ab dolorem
+                                </p>
+                                <div class="snFooter">
+                                    <h4 class="snOwner">Admin</h4>
+                                    <p class="snEnd">Mar 20 - 5 min read <i class="fa-solid fa-star"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sn snCard">
+                            <div class="snImg">
+                                <img src="images/n4.jpeg" alt="">
+                            </div>
+                            <div class="snDes">
+                                <h3>School News Title</h3>
+                                <span class="nCard_date"><i class="fa-solid fa-calendar-days"></i> 19 MAY 24 <i
+                                        class="fa-solid fa-newspaper"></i> New Vision</span>
+                                <p>Lorem ipsum dolor sit amet consectetur elit. Inventore, sint? Porro ab dolorem
+                                </p>
+                                <div class="snFooter">
+                                    <h4 class="snOwner">Admin</h4>
+                                    <p class="snEnd">Mar 20 - 5 min read <i class="fa-solid fa-star"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sn snCard">
+                            <div class="snImg">
+                                <img src="images/n5.jpeg" alt="">
+                            </div>
+                            <div class="snDes">
+                                <h3>School News Title</h3>
+                                <span class="nCard_date"><i class="fa-solid fa-calendar-days"></i> 19 MAY 24 <i
+                                        class="fa-solid fa-newspaper"></i> New Vision</span>
+                                <p>Lorem ipsum dolor sit amet consectetur elit. Inventore, sint? Porro ab dolorem
+                                </p>
+                                <div class="snFooter">
+                                    <h4 class="snOwner">Admin</h4>
+                                    <p class="snEnd">Mar 20 - 5 min read <i class="fa-solid fa-star"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sn snCard">
+                            <div class="snImg">
+                                <img src="images/n6.jpeg" alt="">
+                            </div>
+                            <div class="snDes">
+                                <h3>School News Title</h3>
+                                <span class="nCard_date"><i class="fa-solid fa-calendar-days"></i> 19 MAY 24 <i
+                                        class="fa-solid fa-newspaper"></i> New Vision</span>
+                                <p>Lorem ipsum dolor sit amet consectetur elit. Inventore, sint? Porro ab dolorem
+                                </p>
+                                <div class="snFooter">
+                                    <h4 class="snOwner">Admin</h4>
+                                    <p class="snEnd">Mar 20 - 5 min read <i class="fa-solid fa-star"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="schoolPostsWrapper">
+
+                    <h2>Popular News Articles</h2>
+                        <div class="snLine"></div>
+
+                        <div class="sPost_card">
+                            <div class="sPostnum">
+                                <span id="postPosition"> 01 </span>
+                            </div>
+                            <div class="sPostDes">
+                                <h3>School News Title</h3>
+                                <span class="nCard_date"><i class="fa-solid fa-calendar-days"></i> 19 MAY 24 <i
+                                        class="fa-solid fa-newspaper"></i> New Vision</span>
+                                <div class="sPostFooter">
+                                    <h4 class="spOwner">Admin</h4>
+                                    <p class="spEnd">Mar 20 - 5 min read <i class="fa-solid fa-star"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sPost_card">
+                            <div class="sPostnum">
+                                <span id="postPosition"> 02 </span>
+                            </div>
+                            <div class="sPostDes">
+                                <h3>School News Title</h3>
+                                <span class="nCard_date"><i class="fa-solid fa-calendar-days"></i> 19 MAY 24 <i
+                                        class="fa-solid fa-newspaper"></i> New Vision</span>
+                                <div class="sPostFooter">
+                                    <h4 class="spOwner">Admin</h4>
+                                    <p class="spEnd">Mar 20 - 5 min read <i class="fa-solid fa-star"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sPost_card">
+                            <div class="sPostnum">
+                                <span id="postPosition"> 03 </span>
+                            </div>
+                            <div class="sPostDes">
+                                <h3>School News Title</h3>
+                                <span class="nCard_date"><i class="fa-solid fa-calendar-days"></i> 19 MAY 24 <i
+                                        class="fa-solid fa-newspaper"></i> New Vision</span>
+                                <div class="sPostFooter">
+                                    <h4 class="spOwner">Admin</h4>
+                                    <p class="spEnd">Mar 20 - 5 min read <i class="fa-solid fa-star"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sPost_card">
+                            <div class="sPostnum">
+                                <span id="postPosition"> 04 </span>
+                            </div>
+                            <div class="sPostDes">
+                                <h3>School News Title</h3>
+                                <span class="nCard_date"><i class="fa-solid fa-calendar-days"></i> 19 MAY 24 <i
+                                        class="fa-solid fa-newspaper"></i> New Vision</span>
+                                <div class="sPostFooter">
+                                    <h4 class="spOwner">Admin</h4>
+                                    <p class="spEnd">Mar 20 - 5 min read <i class="fa-solid fa-star"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sPost_card">
+                            <div class="sPostnum">
+                                <span id="postPosition"> 05 </span>
+                            </div>
+                            <div class="sPostDes">
+                                <h3>School News Title</h3>
+                                <span class="nCard_date"><i class="fa-solid fa-calendar-days"></i> 19 MAY 24 <i
+                                        class="fa-solid fa-newspaper"></i> New Vision</span>
+                                <div class="sPostFooter">
+                                    <h4 class="spOwner">Admin</h4>
+                                    <p class="spEnd">Mar 20 - 5 min read <i class="fa-solid fa-star"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+
+        <div class="footer_sections">
+
+            <div>
+                <h2>Your Logo</h2>
+                <p>Your Taggline here</p>
+
+                <div class="footerinput-container">
+                    <div>
+                        <h2>Subscribe Now</h2>
+                        <p>To keep updated with the latest school news and events</p>
+                    </div>
+                    <span class="footer_mail">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <input type="email" name="email" id="footer_email" placeholder="Enter Your Email">
+                </div>
+                <button class="footer_subscribeBtn" onclick="">Subscribe</button>
+            </div>
+
+            <div>
+                <h2>Information</h2>
+                <div class="footerSection-line"></div>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">News & Events</a></li>
+                    <li><a href="#">School Calendar</a></li>
+                    <li><a href="#">Admission</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>News & Events</h2>
+                <div class="footerSection-line"></div>
+                <ul>
+                    <li><a href="#">Sports Day Fun</a></li>
+                    <li><a href="#">PLE Results News</a></li>
+                    <li><a href="#">Our Trip to Tiptop </a></li>
+                    <li><a href="#">End of year school party</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Contact Us</h2>
+                <div class="footerSection-line"></div>
+                <div class="footerContact_details">
+                    <div class="footerContact_details_card">
+                        <a href="tel:+"><i class="fa-solid fa-phone-volume"></i> 0777121398</a>
+                    </div>
+                    <div class="footerContact_details_card">
+                        <a href="mailto:"><i class="fa-solid fa-envelope"></i> yourmailid.com</a>
+                    </div>
+                </div>
+                <div class="footer_social_icons">
+                    <a href="#"><i class="fa-brands fa-square-whatsapp" id="footer_social" aria-hidden="true"></i>
+                    </a>
+                    <a href="#"><i class="fa-brands fa-square-facebook" id="footer_social" aria-hidden="true"></i>
+                    </a>
+                    <a href="#"><i class="fa-brands fa-square-instagram" id="footer_social" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="footer_line"></div>
+
+        <div class="footer_rights">
+            <p>&copy;2024 schoolportal All rights reserved</p>
+        </div>
+
+    </footer>
+
+    <script src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/12a976ee58.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
