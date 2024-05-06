@@ -118,14 +118,15 @@ function changeNavbarBackground() {
 
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         navbar.style.backgroundColor = "#021D1B"; // Change the background color as needed
-        navbar.classList.add("scrolled"); // Add a class to the nav tag
+        // navbar.classList.add("scrolled"); // Add a class to the nav tag
+        navbar.classList.toggle("scrolled");
         // Change colors when scrolled
         logoSpan.style.color = '#099714'; // Change to the desired color
         userProfileIcon.style.color = '#099714'; // Change to the desired color
         // signBtn.style.backgroundColor = '#099714'; // Change to the desired color
     } else {
         navbar.style.backgroundColor = "transparent";
-        navbar.classList.remove("scrolled"); // Add a class to the nav tag
+        // navbar.classList.remove("scrolled"); // Add a class to the nav tag
         logoSpan.style.color = ''; // Revert to the original color
         userProfileIcon.style.color = ''; // Revert to the original color
         // signBtn.style.backgroundColor = ''; // Revert to the original color
