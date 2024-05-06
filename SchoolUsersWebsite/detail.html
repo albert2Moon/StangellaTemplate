@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Watbin Albert">
+
+    <title>School Portal</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar2" id="navbar">
+
+        <div class="menu" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <div class="logo">
+            <h1><span>S</span>.Portal</h1>
+        </div>
+
+        <ul class="menuList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="newsevent.html">News & Events</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="signin">
+            <div class="dropdown" id="userProfile">
+                <button onclick="toggleDropdown()">
+                    <svg id="user" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <g id="SVGRepo_iconCarrier">
+                            <circle cx="12" cy="6" r="4" fill="#CDFCF5" />
+                            <path
+                                d="M20 17.5C20 19.9853 20 22 12 22C4 22 4 19.9853 4 17.5C4 15.0147 7.58172 13 12 13C16.4183 13 20 15.0147 20 17.5Z"
+                                fill="#CDFCF5" />
+                        </g>
+
+                    </svg>
+                </button>
+                <div class="dropdown-content" id="dropdownContent">
+                    <a href="signin.html">Portal</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1 id="pageTitle">Detail Page</h1>
+        <button onclick="goBack()">Back</button>
+    </div>
+
+
+    <section class="content">
+        <div id="cardContent">
+            
+            <img id="img" src="images/" alt="School News Image">
+            <h3 id="title"></h3>
+            <p id="date"></p>
+            <p id="fullContent"></p>
+            <p id="owner"></p>
+            <p id="readTime"></p>
+            
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+
+        <div class="footer_sections">
+
+            <div>
+                <h2>Your Logo</h2>
+                <p>Your Taggline here</p>
+
+                <div class="footerinput-container">
+                    <div>
+                        <h2>Subscribe Now</h2>
+                        <p>To keep updated with the latest school news and events</p>
+                    </div>
+                    <span class="footer_mail">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <input type="email" name="email" id="footer_email" placeholder="Enter Your Email">
+                </div>
+                <button class="footer_subscribeBtn" onclick="">Subscribe</button>
+            </div>
+
+            <div>
+                <h2>Information</h2>
+                <div class="footerSection-line"></div>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">News & Events</a></li>
+                    <li><a href="#">School Calendar</a></li>
+                    <li><a href="#">Admission</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>News & Events</h2>
+                <div class="footerSection-line"></div>
+                <ul>
+                    <li><a href="#">Sports Day Fun</a></li>
+                    <li><a href="#">PLE Results News</a></li>
+                    <li><a href="#">Our Trip to Tiptop </a></li>
+                    <li><a href="#">End of year school party</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Contact Us</h2>
+                <div class="footerSection-line"></div>
+                <div class="footerContact_details">
+                    <div class="footerContact_details_card">
+                        <a href="tel:+"><i class="fa-solid fa-phone-volume"></i> 0777121398</a>
+                    </div>
+                    <div class="footerContact_details_card">
+                        <a href="mailto:"><i class="fa-solid fa-envelope"></i> yourmailid.com</a>
+                    </div>
+                </div>
+                <div class="footer_social_icons">
+                    <a href="#"><i class="fa-brands fa-square-whatsapp" id="footer_social" aria-hidden="true"></i>
+                    </a>
+                    <a href="#"><i class="fa-brands fa-square-facebook" id="footer_social" aria-hidden="true"></i>
+                    </a>
+                    <a href="#"><i class="fa-brands fa-square-instagram" id="footer_social" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="footer_line"></div>
+
+        <div class="footer_rights">
+            <p>&copy;2024 schoolportal All rights reserved</p>
+        </div>
+
+    </footer>
+
+    <script src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/12a976ee58.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
