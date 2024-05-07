@@ -50,6 +50,10 @@
         transition-timing-function: ease;
     }
 
+    .navbar.scrolled {
+        background: var(--dark-green);
+    }
+
     .navbar.scrolled h1 {
         color: var(--mint-green);
     }
