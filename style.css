@@ -4283,7 +4283,7 @@
     }
 
 
-    #userProfile button>i:hover {
+    /* #userProfile button>i:hover {
         color: var(--dartmouth-green);
     }
 
@@ -4294,7 +4294,7 @@
 
     .navbar2 #userProfile button>i:hover {
         color: var(--dartmouth-green);
-    }
+    } */
 
     /* Style for the dropdown container */
     .dropdown {
