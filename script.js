@@ -178,7 +178,7 @@ function changeNavbarBackground(navbar, logoSpan, userProfileIcon) {
         userProfileIcon.style.color = '#099714';
     } else {
         navbar.style.backgroundColor = "transparent";
-        navbar.classList.remove("scrolled");
+        navbar.classList.remove("navbar2 scrolled");
         logoSpan.style.color = '';
         userProfileIcon.style.color = '';
     }
