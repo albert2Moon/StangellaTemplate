@@ -4187,8 +4187,11 @@
         transition-property: "background";
         transition-duration: .3s;
         transition-timing-function: ease;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
-        position: fixed;
+        position: sticky;
         top: 0;
     }
 
