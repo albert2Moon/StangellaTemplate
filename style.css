@@ -4219,6 +4219,7 @@
     .logo h1 {
         color: var(--mint-green);
         font-size: 2rem;
+        left: 0;
     }
 
     .logo h1 span {
