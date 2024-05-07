@@ -58,6 +58,12 @@
 
     .navbar.scrolled {
         background: var(--dark-green);
+        transition-property: "background";
+        transition-duration: 0.4s;
+        transition-timing-function: ease;
+    }
+    .navbar ul li a:hover {
+        color: var(--dark-green);
     }
 
     .navbar.scrolled h1 {
