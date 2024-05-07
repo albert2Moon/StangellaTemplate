@@ -449,7 +449,7 @@
     .carousel_line {
         height: 4px;
         border-radius: 20px;
-        background: var(--dark-green);
+        background: var(--forest-green);
         margin: 20px auto 0 0;
         width: 50px;
     }
