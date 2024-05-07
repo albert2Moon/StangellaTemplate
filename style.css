@@ -450,7 +450,7 @@
         height: 4px;
         border-radius: 20px;
         background: var(--dark-green);
-        margin: 0 auto;
+        margin: 0 auto 0 0;
         width: 50px;
     }
 
