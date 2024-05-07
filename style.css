@@ -50,6 +50,12 @@
         transition-timing-function: ease;
     }
 
+    .navbar {
+        transition-property: "background";
+        transition-duration: 0.4s;
+        transition-timing-function: ease;
+    }
+
     .navbar.scrolled {
         background: var(--dark-green);
     }
