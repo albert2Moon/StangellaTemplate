@@ -4176,13 +4176,13 @@
         /* border: 1px solid orange; */
         padding: 10px 20px;
         position: fixed;
-        width: 100vw;
+        width: 100%;
         z-index: 3;
         /* top: 0; */
     }
 
     .navbar2 {
-        border: 1px solid orange;
+        /* border: 1px solid orange; */
         background: var(--dark-green);
         transition-property: "background";
         transition-duration: .3s;
