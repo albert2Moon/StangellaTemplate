@@ -4188,7 +4188,7 @@
         transition-duration: .3s;
         transition-timing-function: ease;
         width: 100%;
-        position: sticky;
+        position: fixed;
         top: 0;
     }
 
