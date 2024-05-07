@@ -173,12 +173,12 @@ document.addEventListener("DOMContentLoaded", function () {
 function changeNavbarBackground(navbar, logoSpan, userProfileIcon) {
     if (window.pageYOffset > 20) {
         navbar.style.backgroundColor = "#021D1B";
-        navbar.classList.add("navbar2 scrolled");
+        // navbar.classList.add("navbar2 scrolled");
         logoSpan.style.color = '#099714';
         userProfileIcon.style.color = '#099714';
     } else {
         navbar.style.backgroundColor = "transparent";
-        navbar.classList.remove("navbar2 scrolled");
+        // navbar.classList.remove("navbar2 scrolled");
         logoSpan.style.color = '';
         userProfileIcon.style.color = '';
     }
