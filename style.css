@@ -443,7 +443,15 @@
     }
 
     .carousel_item h1 {
-        color: var(--dark-green);
+        color: var(--mint-green);
+    }
+
+    .carousel_line {
+        height: 4px;
+        border-radius: 20px;
+        background: var(--dark-green);
+        margin: 0 auto;
+        width: 50px;
     }
 
     .carousel_item p {
