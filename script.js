@@ -154,44 +154,35 @@ function toggleDropdown() {
 // }
 
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     // const navbar = document.getElementById("navbar");
-//     const logoSpan = document.querySelector('.logo span');
-//     // const userProfileIcon = document.querySelector('#user');
+document.addEventListener("DOMContentLoaded", function () {
+    // const navbar = document.getElementById("navbar");
+    const logoSpan = document.querySelector('.logo span');
+    // const userProfileIcon = document.querySelector('#user');
 
-//     if (window.location.pathname.includes("index.html")) {
-//         window.addEventListener('scroll', function () {
-//             changeNavbarBackground( logoSpan);
-//         });
-//     } else {
-//         window.addEventListener('scroll', function () {
-//             revertNavbarBackground( logoSpan);
-//         });
-//     }
-// });
+    if (window.location.pathname.includes("index.html")) {
+        window.addEventListener('scroll', function () {
+            changeNavbarBackground(logoSpan);
+        });
+    } else {
+        window.addEventListener('scroll', function () {
+            revertNavbarBackground(logoSpan);
+        });
+    }
+});
 
-// function changeNavbarBackground(navbar, logoSpan) {
-//     if (window.pageYOffset > 20) {
-//         navbar.style.backgroundColor = "#021D1B";
-//         // navbar.classList.add("navbar2 scrolled");
-//         // logoSpan.style.color = '#099714';
-//         // userProfileIcon.style.color = '#099714';
-//     } else {
-//         navbar.style.backgroundColor = "transparent";
-//         // navbar.classList.remove("navbar2 scrolled");
-//         // logoSpan.style.color = '';
-//         // userProfileIcon.style.color = '';
-//     }
-// }
+function changeNavbarBackground(logoSpan) {
+    if (window.pageYOffset > 20) {
+        logoSpan.style.color = '#099714';
+    } else {
+        logoSpan.style.color = '';
+    }
+}
 
-// function revertNavbarBackground(logoSpan) {
-//     if (window.pageYOffset > 0) {
-//         // navbar.style.backgroundColor = "#021D1B";
-//         // navbar.classList.add("navbar2");
-//         logoSpan.style.color = '#006714';
-//         // userProfileIcon.style.fill = '#CDFCF5';
-//     }
-// }
+function revertNavbarBackground(logoSpan) {
+    if (window.pageYOffset > 0) {
+        logoSpan.style.color = '#006714';
+    }
+}
 
 
 document.addEventListener("DOMContentLoaded", function () {
