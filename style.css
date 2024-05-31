@@ -4216,11 +4216,15 @@
         color: var(--forest-green);
     }
 
+    .navbar.logo {
+        margin-right: 20px;
+    }
+
     .logo h1 {
         color: var(--mint-green);
         font-size: 2rem;
-        
     }
+
 
     .logo h1 span {
         font-size: 2.5rem;
