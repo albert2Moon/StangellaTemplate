@@ -4217,8 +4217,8 @@
     }
 
     .navbar .logo {
-        border: 1px solid orange;
-        margin-right: 20px;
+        /* border: 1px solid orange; */
+        margin-right: 40px;
     }
 
     .logo h1 {
