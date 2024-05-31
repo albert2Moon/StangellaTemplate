@@ -4216,7 +4216,8 @@
         color: var(--forest-green);
     }
 
-    .navbar.logo {
+    .navbar .logo {
+        border: 1px solid orange;
         margin-right: 20px;
     }
 
