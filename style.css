@@ -4798,7 +4798,9 @@
         padding: 10px 30px;
         width: 100%;
         margin: 0 10px;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .aboutCard h1 {
