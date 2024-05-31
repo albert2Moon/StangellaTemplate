@@ -4825,6 +4825,9 @@
         font-size: 1rem;
         text-align: center;
     }
+    .aboutCard a {
+        text-align: center;
+    }
 
     .aboutCard button {
         background: var(--dark-green);
