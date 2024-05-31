@@ -4837,7 +4837,7 @@
         color: var(--mint-green);
         font-size: 1rem;
         width: 150px;
-        margin: 20px auto;
+        margin: 20px 20px;
         transition-property: "background";
         transition-duration: 0.5s;
         transition-timing-function: ease;
