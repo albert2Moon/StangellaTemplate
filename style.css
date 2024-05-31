@@ -5879,7 +5879,7 @@
 
     /* Contact Section */
     .contactPage_container {
-        border: 1px solid orange;
+        /* border: 1px solid orange; */
         text-align: center;
         display: flex;
         justify-content: center;
@@ -5895,7 +5895,7 @@
 
     .contactPage_container p {
         width: 300px;
-        border: 1px solid orange;
+        /* border: 1px solid orange; */
     }
 
     .contact_containercard {
@@ -5912,7 +5912,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        border: 1px solid orange;
+        /* border: 1px solid orange; */
     }
 
     .contactPage_card1 {
@@ -5920,7 +5920,7 @@
     }
 
     .contactPage_card1 div {
-        border: 1px solid orange;
+        /* border: 1px solid orange; */
         width: fit-content;
     }
 
@@ -6046,7 +6046,7 @@
     }
 
     .schoolmap {
-        border: 1px solid orange;
+        /* border: 1px solid orange; */
         width: 100%;
         margin: 0 auto;
         display: flex;
