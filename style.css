@@ -4636,7 +4636,7 @@
     }
 
     .carousel_container {
-        /* border: 1px solid orange; */
+        border: 1px solid orange;
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -5879,7 +5879,7 @@
 
     /* Contact Section */
     .contactPage_container {
-        /* border: 1px solid orange; */
+        border: 1px solid orange;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -5895,7 +5895,7 @@
 
     .contactPage_container p {
         width: 300px;
-        /* border: 1px solid orange; */
+        border: 1px solid orange;
     }
 
     .contact_containercard {
@@ -5904,7 +5904,7 @@
         /* padding: 20px; */
         margin: 20px 0;
         flex-wrap: wrap;
-        /* border: 1px solid orange; */
+        border: 1px solid orange;
     }
 
     .contactPage_card1,
@@ -5912,7 +5912,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* border: 1px solid orange; */
+        border: 1px solid orange;
     }
 
     .contactPage_card1 {
@@ -5920,7 +5920,7 @@
     }
 
     .contactPage_card1 div {
-        /* border: 1px solid orange; */
+        border: 1px solid orange;
         width: fit-content;
     }
 
@@ -6027,7 +6027,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        /* border: 1px solid orange; */
+        border: 1px solid orange;
     }
 
     .support_card i {
@@ -6046,7 +6046,7 @@
     }
 
     .schoolmap {
-        /* border: 1px solid orange; */
+        border: 1px solid orange;
         width: 100%;
         margin: 0 auto;
         display: flex;
