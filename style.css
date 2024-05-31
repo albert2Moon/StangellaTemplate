@@ -5901,7 +5901,7 @@
     .contact_containercard {
         display: flex;
         flex-direction: row;
-        /* padding: 20px; */
+        padding: 20px 0;
         margin: 20px 0;
         flex-wrap: wrap;
         border: 1px solid orange;
