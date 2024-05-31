@@ -4805,6 +4805,7 @@
         font-size: 2rem;
         font-family: "Roboto";
         margin-top: 30px;
+        text-align: center;
     }
 
     .about_line {
@@ -4812,15 +4813,17 @@
         background: var(--forest-green);
         border-radius: 20px;
         width: 50px;
-        margin: 10px 0 20px;
+        margin: 10px auto;
     }
 
     .aboutCard h3 {
         margin-bottom: 20px;
+        text-align: center;
     }
 
     .aboutCard p {
         font-size: 1rem;
+        text-align: center;
     }
 
     .aboutCard button {
@@ -4830,7 +4833,8 @@
         border-radius: 20px;
         color: var(--mint-green);
         font-size: 1rem;
-        margin: 20px 0;
+        width: 100px;
+        margin: 20px auto;
         transition-property: "background";
         transition-duration: 0.5s;
         transition-timing-function: ease;
