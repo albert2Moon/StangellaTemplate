@@ -5904,7 +5904,7 @@
         padding: 20px 0;
         margin: 20px 0;
         flex-wrap: wrap;
-        border: 1px solid orange;
+        /* border: 1px solid orange; */
     }
 
     .contactPage_card1,
@@ -6027,7 +6027,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid orange;
+        /* border: 1px solid orange; */
     }
 
     .support_card i {
