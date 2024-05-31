@@ -4636,7 +4636,7 @@
     }
 
     .carousel_container {
-        border: 1px solid orange;
+        /* border: 1px solid orange; */
         display: flex;
         flex-direction: column;
         align-items: start;
