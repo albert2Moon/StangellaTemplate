@@ -5901,7 +5901,7 @@
     .contact_containercard {
         display: flex;
         flex-direction: row;
-        padding: 20px 0;
+        padding: 0;
         margin: 20px 0;
         flex-wrap: wrap;
         /* border: 1px solid orange; */
@@ -6057,6 +6057,7 @@
 
     #mapframe {
         width: 100%;
+        border: none;
     }
 
 
